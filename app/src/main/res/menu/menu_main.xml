@@ -7,4 +7,19 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_playlist"
+        android:orderInCategory="100"
+        android:title="Playlist"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_maps"
+        android:orderInCategory="100"
+        android:title="Maps"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="100"
+        android:title="Camera"
+        app:showAsAction="never" />
 </menu>
