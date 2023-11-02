@@ -6,14 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.splashscreen.databinding.FragmentFifthBinding
 import com.example.splashscreen.databinding.FragmentForthBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class ForthFragment : Fragment() {
+class FifthFragment : Fragment() {
 
-    private var _binding: FragmentForthBinding? = null
+    private var _binding: FragmentFifthBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,7 +25,7 @@ class ForthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentForthBinding.inflate(inflater, container, false)
+        _binding = FragmentFifthBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -32,18 +33,18 @@ class ForthFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.button4second.setOnClickListener {
-            findNavController().navigate(R.id.action_ForthFragment_to_SecondFragment)
+        binding.button5fourth.setOnClickListener {
+            findNavController().navigate(R.id.action_FifthFragment_to_ForthFragment)
         }
 
-        binding.button4first.setOnClickListener {
-            findNavController().navigate(R.id.action_ForthFragment_to_FirstFragment)
+        binding.button5third.setOnClickListener {
+            findNavController().navigate(R.id.action_FifthFragment_to_ThirdFragment)
         }
-        binding.button4third.setOnClickListener {
-            findNavController().navigate(R.id.action_ForthFragment_to_ThirdFragment)
+        binding.button5first.setOnClickListener {
+            findNavController().navigate(R.id.action_FifthFragment_to_FirstFragment)
         }
-        binding.button4fifth.setOnClickListener {
-            findNavController().navigate(R.id.action_ForthFragment_to_FifthFragment)
+        binding.button5second.setOnClickListener {
+            findNavController().navigate(R.id.action_FifthFragment_to_SecondFragment)
         }
     }
 
